@@ -59,9 +59,9 @@ def choose_transaction():
 def phone_confirm():
     while True:
         try:
-            phone1 = int(input("Please enter your phone number: "))
-            phone2 = int(input("Please enter your phone number: "))
-            if len(str(phone1)) == 11 and len(str(phone2)) == 11:
+            phone1 = input("Please enter your phone number: ")
+            phone2 = input("Please re-enter your phone number: ")
+            if len(phone1) == 11 and len(phone2) == 11:
                 if phone1 == phone2:
                     return True
                 else:
